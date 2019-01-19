@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:InfiniteCalendar" x:Class="InfiniteCalendar.MainPage">
     <ContentPage.Content>
-        <Button BackgroundColor="#388E3C" TextColor="White" Text="Launch Calendar" BorderColor="Silver" HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" Clicked="LaunchCalendarClicked">
+        <Button BackgroundColor="#388E3C" TextColor="White" Text="Launch Calendar" 
+                BorderColor="Silver" HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" Padding="5"
+                Clicked="LaunchCalendarClicked">
         </Button>
     </ContentPage.Content>
 </ContentPage>

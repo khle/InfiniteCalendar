@@ -1,5 +1,102 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InfiniteCalendar.CalendarGridView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:Key="ToolbarItemOrder" x:TypeArguments="ToolbarItemOrder">
+                <On Platform="iOS">Primary</On>
+            </OnPlatform>
+            <OnPlatform x:Key="LabelFontLarge" x:TypeArguments="x:Double" iOS="36" Android="36" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout VerticalOptions="Start" Padding="10">
+                <Label Text="January 2019" TextColor="Black" FontAttributes="Bold" FontSize="{StaticResource LabelFontLarge}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <Grid x:Name="CalendarGrid" VerticalOptions="FillAndExpand" Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="S" TextColor="Teal" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="M" TextColor="Teal" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="T" TextColor="Teal" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="W" TextColor="Teal" Grid.Row="0" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="T" TextColor="Teal" Grid.Row="0" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="F" TextColor="Teal" Grid.Row="0" Grid.Column="5" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="S" TextColor="Teal" Grid.Row="0" Grid.Column="6" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+                <Label Text="X" TextColor="Black" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />                  
+                <Label Text="X" TextColor="Black" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />                 
+                <Label Text="X" TextColor="Black" Grid.Row="1" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="1" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="1" Grid.Column="5" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />                  
+                <Label Text="X" TextColor="Black" Grid.Row="1" Grid.Column="6" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />    
+                
+                <Label Text="X" TextColor="Black" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="2" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="2" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="2" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="2" Grid.Column="5" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="2" Grid.Column="6" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+                <Label Text="X" TextColor="Black" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="3" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="3" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="3" Grid.Column="5" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="3" Grid.Column="6" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+                <Label Text="X" TextColor="Black" Grid.Row="4" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="4" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="4" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="4" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="4" Grid.Column="5" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="4" Grid.Column="6" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+                <Label Text="X" TextColor="Black" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="5" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="5" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="5" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="5" Grid.Column="5" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="5" Grid.Column="6" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+                <Label Text="X" TextColor="Black" Grid.Row="6" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="6" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="6" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="6" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="6" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="6" Grid.Column="5" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Label Text="X" TextColor="Black" Grid.Row="6" Grid.Column="6" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />  
+            </Grid>
+            <StackLayout VerticalOptions="End" HeightRequest="150" />
+            <Button BackgroundColor="#388E3C" TextColor="White" Text="Placeholder for selected date" BorderColor="Silver" 
+                    HorizontalOptions="Center" VerticalOptions="End" Padding="5"
+                    Clicked="OnCancelClicked">
+            </Button>
+        </StackLayout>
     </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Order="{StaticResource ToolbarItemOrder}" Clicked="OnCancelClicked" />
+    </ContentPage.ToolbarItems>
 </ContentPage>
